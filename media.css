@@ -1,0 +1,109 @@
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* Extra Large Screens (Desktop - optional adjustment for ultra-wide) */
+@media (max-width: 1200px) {
+    .beardDisplay {
+        grid-template-columns: 1fr 1fr; /* Switch from fixed 80rem to fluid fractions */
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+    .display1, .display2, .display3, .display4 {
+        margin-left: 0; /* Reset the 20% offset */
+        width: 90%;
+    }
+}
+
+/* Tablet / Large Phones (992px and below) */
+@media (max-width: 992px) {
+    html {
+        font-size: 55%; /* Scales down all rem-based units slightly */
+    }
+    .heroText > h2 {
+        font-size: 5rem;
+    }
+    .beradInfo-section > h3 {
+        font-size: 4rem;
+    }
+    .beardDisplay {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Small Tablets / Landscape Phones (768px and below) */
+@media (max-width: 768px) {
+    nav {
+        grid-template-columns: 1fr; /* Stack logo and links */
+        height: auto;
+        padding: 2rem 0;
+    }
+    .logoDiv {
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+    .links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .heroText > h2 {
+        font-size: 4rem;
+    }
+    .heroText > p {
+        font-size: 2rem;
+        padding: 0 2rem;
+    }
+    .beardDisplay {
+        grid-template-columns: 1fr; /* Single column for products */
+        grid-template-rows: auto;
+    }
+    .display1, .display2, .display3, .display4 {
+        margin: 2rem auto;
+        width: 80%; /* Centers the cards */
+        height: auto;
+    }
+    .displayImg {
+        width: 100%;
+        height: 40rem;
+    }
+    .card-grid {
+        grid-template-columns: 1fr; /* Stack features in golden-section */
+    }
+}
+
+/* Small Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    html {
+        font-size: 50%; /* Further reduction for tiny screens */
+    }
+    .heroButton {
+        flex-direction: column;
+        align-items: center;
+    }
+    .heroButton > button {
+        width: 80%;
+    }
+    .heroText > h2 {
+        font-size: 3.5rem;
+    }
+    .beradInfo-section > h3 {
+        font-size: 3rem;
+    }
+    .display1, .display2, .display3, .display4 {
+        width: 95%;
+    }
+    .displayText {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .displayText > h4 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .cta h2 {
+        font-size: 2.8rem;
+    }
+    .footer {
+        padding: 4rem 2rem;
+    }
+}
