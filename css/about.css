@@ -1,0 +1,646 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+nav{
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     border-bottom: 1px solid rgba(0, 0, 0, 0.131);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+display: grid;
+grid-template-columns: 1fr 1fr ;
+    width: 90%;
+    margin: 2rem auto;
+    height:10rem;
+
+        }
+.logoDiv{
+display: flex;
+align-items: center;
+margin-left: 2rem;
+}  
+.logoText {
+  font-family: cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.links>h4{
+    font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.links>h4>a{
+  text-decoration: none;
+  color: black;
+}
+.links>button{
+    padding: 1rem 2rem;
+    background-color: #800000;
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem ;
+      font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Story Hero */
+.story-hero {
+  background-color: #fff7ea;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.story-hero__eyebrow {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #d26a1a;
+  margin-bottom: 1.6rem;
+}
+
+.story-hero__title {
+  font-size: 4.2rem;
+  font-family: "Georgia", serif;
+  color: #3b2b20;
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+}
+
+.story-hero__title span {
+  color: #d26a1a;
+}
+
+.story-hero__text {
+  font-size: 1.6rem;
+  max-width: 62rem;
+  margin: 0 auto;
+  color: #6d5a4a;
+  line-height: 1.6;
+}
+
+/* Section */
+.heritage {
+  background-color: #fff7ea;
+  padding: 8rem 2rem;
+}
+
+.heritage__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  align-items: center;
+  gap: 6rem;
+}
+
+/* Text */
+.heritage__eyebrow {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #d26a1a;
+  margin-bottom: 1.6rem;
+}
+
+.heritage__title {
+  font-size: 3.6rem;
+  font-family: "Georgia", serif;
+  color: #3b2b20;
+  margin-bottom: 2.4rem;
+  line-height: 1.25;
+}
+
+.heritage__content p {
+  font-size: 1.4rem;
+  color: #6d5a4a;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+}
+
+/* Image */
+.heritage__media {
+  position: relative;
+}
+
+.heritage__media img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.6rem;
+  display: block;
+}
+
+/* Badge */
+.heritage__badge {
+  position: absolute;
+  bottom: -2.4rem;
+  left: -2.4rem;
+  background-color: #d26a1a;
+  color: #ffffff;
+  padding: 2.4rem 2.6rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 1.6rem 3.6rem rgba(0, 0, 0, 0.18);
+}
+
+.heritage__badge strong {
+  display: block;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.heritage__badge span {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+/* Section */
+.journey {
+  background-color: #fdfbf7;
+  padding: 8rem 2rem;
+}
+
+.journey__header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.journey__eyebrow {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #d26a1a;
+  margin-bottom: 1.2rem;
+}
+
+.journey__title {
+  font-size: 3.4rem;
+  font-family: "Georgia", serif;
+  color: #3b2b20;
+}
+
+/* Timeline */
+.journey__timeline {
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Vertical line */
+.journey__timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3.2rem;
+  width: 0.2rem;
+  height: 100%;
+  background-color: #e5d6c8;
+}
+
+/* Item */
+.journey__item {
+  display: grid;
+  grid-template-columns: 6.4rem 1fr;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.journey__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Dot */
+.journey__dot {
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: #d26a1a;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.journey__dot--current {
+  background-color: #b85517;
+}
+
+/* Content */
+.journey__content h3 {
+  font-size: 1.8rem;
+  color: #3b2b20;
+  margin-bottom: 0.6rem;
+}
+
+.journey__content p {
+  font-size: 1.4rem;
+  color: #6d5a4a;
+  line-height: 1.6;
+}
+
+/* Section */
+.team {
+  background-color: #fdfbf7;
+  padding: 8rem 2rem;
+}
+
+.team__header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.team__eyebrow {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #d26a1a;
+  margin-bottom: 1.2rem;
+}
+
+.team__title {
+  font-size: 3.4rem;
+  font-family: "Georgia", serif;
+  color: #3b2b20;
+}
+
+/* Grid */
+.team__grid {
+  max-width: 110rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 4rem;
+  text-align: center;
+}
+
+/* Member */
+.team__member {
+  padding: 2rem;
+}
+
+/* Avatar */
+.team__avatar {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  border: 0.4rem solid #f2c94c;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+}
+
+.team__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text */
+.team__name {
+  font-size: 1.8rem;
+  color: #3b2b20;
+  margin-bottom: 0.4rem;
+}
+
+.team__role {
+  display: block;
+  font-size: 1.3rem;
+  color: #d26a1a;
+  margin-bottom: 1.2rem;
+}
+
+.team__bio {
+  font-size: 1.4rem;
+  color: #6d5a4a;
+  line-height: 1.6;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+
+/* Section */
+.values {
+  background-color: #fbf0cd;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.values__header {
+  margin-bottom: 4.5rem;
+}
+
+.values__eyebrow {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #d26a1a;
+  margin-bottom: 1.2rem;
+}
+
+.values__title {
+  font-size: 3.4rem;
+  font-family: "Georgia", serif;
+  color: #3b2b20;
+}
+
+/* Grid */
+.values__grid {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 3rem;
+}
+
+/* Card */
+.values__card {
+  background-color: #ffffff;
+  padding: 3rem 2.4rem;
+  border-radius: 1.2rem;
+  border: 0.1rem solid #e6dccb;
+}
+
+.values__name {
+  font-size: 1.8rem;
+  color: #3b2b20;
+  margin-bottom: 1rem;
+}
+
+.values__text {
+  font-size: 1.4rem;
+  color: #6d5a4a;
+  line-height: 1.6;
+}
+
+
+/* CTA + Footer Section */
+.cta-footer {
+  background-color:#800000;
+  color: #ffffff;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 8rem 2rem 6rem; /* 80px 20px 60px */
+}
+
+.cta h2 {
+  font-size: 3.6rem;       /* 36px */
+  margin-bottom: 2rem;
+}
+
+.cta p {
+  font-size: 1.6rem;       /* 16px */
+  max-width: 60rem;       /* 600px */
+  margin: 0 auto 4rem;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f4c400;
+  color: #3b2a20;
+  padding: 1.4rem 3rem;   /* 14px 30px */
+  border-radius: 1rem;    /* 10px */
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta-btn span {
+  font-size: 1.8rem;
+}
+
+/* Footer */
+.footer {
+  padding: 6rem 4rem 3rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 4rem;
+}
+
+.footer h3,
+.footer h4 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.footer-brand p,
+.footer-links a,
+.footer-social p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #f8e6d3;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 0.1rem solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hours {
+  font-size: 1.4rem;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.3);
+  margin-top: 4rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #f3d9b8;
+}
+
+
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Small phones */
+@media (max-width: 22.5rem) {
+  nav {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .story-hero {
+    padding: 6rem 1.6rem;
+  }
+
+  .story-hero__title {
+    font-size: 3.2rem;
+  }
+
+  .heritage__badge {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .cta h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* Phones */
+@media (min-width: 22.6rem) and (max-width: 37.4rem) {
+    nav {
+        grid-template-columns: 1fr; /* Stack logo and links */
+        height: auto;
+        padding: 2rem 0;
+    }
+    .logoDiv {
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+    .links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+  .story-hero__title {
+    font-size: 3.4rem;
+  }
+
+  .heritage__container {
+    gap: 4rem;
+  }
+}
+
+/* Small tablets */
+@media (min-width: 37.5rem) and (max-width: 47.9rem) {
+  nav {
+    height: 9rem;
+  }
+
+  .story-hero__title {
+    font-size: 3.8rem;
+  }
+
+  .cta h2 {
+    font-size: 3.2rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 48rem) and (max-width: 63.9rem) {
+  nav {
+    width: 95%;
+  }
+
+  .story-hero__title {
+    font-size: 4rem;
+  }
+
+  .journey__timeline {
+    max-width: 80rem;
+  }
+  
+}
+
+/* Laptops */
+@media (min-width: 64rem) and (max-width: 89.9rem) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 90rem) {
+  html {
+    font-size: 68%;
+  }
+
+  nav {
+    max-width: 140rem;
+  }
+}
+
+/* Ultra-wide */
+@media (min-width: 120rem) {
+  html {
+    font-size: 72%;
+  }
+
+  .story-hero,
+  .heritage,
+  .journey,
+  .team,
+  .values {
+    padding: 10rem 2rem;
+  }
+}
+
